@@ -1,9 +1,14 @@
+import './ExpenseItem.css'
 
-function ExpenseItem(props){
+export function ExpenseItem({name, price, img}){
 
     return (
         <div>
-            <div> {props.} </div>
+            <div> 
+                <p>{name}</p>
+                <p>{price}</p>
+                </div>
+            <img src={img}/>
         </div>
     )
 }
